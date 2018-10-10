@@ -4,6 +4,7 @@ import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.app.Activity;
 import android.provider.ContactsContract;
@@ -91,6 +92,7 @@ public class ContactsListActivity extends Activity {
         while (mCursor.moveToNext()) {
             String contactName = mCursor.getString(mCursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME));
             String phoneNumber = mCursor.getString(mCursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
+
 
             mContacts.add("Name: " + contactName + newLine + "Phone Number: " + phoneNumber);
         }

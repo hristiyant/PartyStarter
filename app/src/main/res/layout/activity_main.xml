@@ -26,9 +26,21 @@
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="Contacts" />
+
+    <Button
+        android:id="@+id/fab_pref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Preferences"
+        android:layout_gravity="bottom|end"
+        android:src="@android:drawable/ic_menu_preferences"
+        android:layout_margin="40px"/>
 
     <include layout="@layout/content_main" />
+
+
+
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"

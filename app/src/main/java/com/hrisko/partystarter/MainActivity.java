@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final int PERMISSIONS_REQUEST_READ_CONTACTS = 555;
     Button mButton;
+    Button mButton1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +32,15 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        mButton1  = findViewById(R.id.fab_pref);
+        mButton1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent modifySettings = new Intent(MainActivity.this, SettingsActivity2.class);
+                startActivity(modifySettings);
+            }
+        });
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {

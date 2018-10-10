@@ -44,7 +44,11 @@
             android:label="@string/title_activity_contacts_list" />
         <activity
             android:name=".ContactDetailsActivity"
-            android:label="@string/title_activity_contact_details"></activity>
+            android:label="@string/title_activity_contact_details" />
+        <activity android:name=".SettingsActivity2"
+            android:label="SettingsActivity2"/>
+
+
     </application>
 
 </manifest>
